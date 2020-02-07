@@ -1,0 +1,64 @@
+{% load static %}
+<!DOCTYPE html>
+<head>
+
+<!-- Basic Page Needs
+================================================== -->
+<title>We go greenr</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!-- CSS
+================================================== -->
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<link rel="stylesheet" href="{% static 'css/main-color.css' %}" id="colors">
+
+</head>
+
+<body class="transparent-header">
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+<!-- Header Container
+================================================== -->
+{% block header %}
+{% endblock %}
+
+<!-- Header Container / End -->
+
+
+{% block content %}
+{% endblock %}
+
+
+
+{% include './footer.html' %}
+
+
+</div>
+<!-- Wrapper / End -->
+
+
+<!-- Scripts
+================================================== -->
+<script type="text/javascript" src="{% static 'scripts/jquery-3.4.1.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'scripts/jquery-migrate-3.1.0.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'scripts/mmenu.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'scripts/chosen.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'scripts/slick.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'scripts/rangeslider.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'scripts/magnific-popup.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'scripts/waypoints.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'scripts/counterup.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'scripts/jquery-ui.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'scripts/tooltips.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'scripts/custom.js' %}"></script>
+
+{% block script %}
+{% endblock %}
+
+
+
+</body>
+</html>
